@@ -1,4 +1,6 @@
 // code goes here :)
+
+// function for sum that we mwde in class
 function sum(arr) {
     var sumOfNum = 0;
     for( i = 0; i<arr.length; i++) {
@@ -66,7 +68,7 @@ document.getElementById('answer3').innerHTML = filterGBP
 var woodMaterials = items.filter(function(element, idx, arr){
    return element.materials.indexOf('wood') !== -1
  }).map(function(element, idx, arr){
-    return element.title;
+    return element.title +",  ";
   })
 
 document.getElementById('answer4').innerHTML = woodMaterials
